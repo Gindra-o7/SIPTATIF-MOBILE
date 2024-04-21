@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:backgroundTint="@color/background">
+
+    <ImageView
+        android:id="@+id/L_img_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/gambar1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow_back"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/L_btnback"
+        android:onClick="onBackClicked"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/L_img_1"
+        android:text="Selamat Datang Kembali!"
+        android:textSize="20dp"
+        android:fontFamily="@font/poppinsbold"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:id="@+id/L_txt_1"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gambar3"
+        android:layout_below="@id/L_txt_1"
+        android:id="@+id/L_img_2"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/L_img_2"
+        android:padding="30dp"
+        android:id="@+id/L_ly_1">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/button_shape"
+            android:hint="Masukkan email"
+            android:backgroundTint="@color/white"
+            android:paddingLeft="15dp"
+            android:fontFamily="@font/poppinsregular"
+            android:textColor="@color/black"
+            android:id="@+id/L_ed_fullname"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/button_shape"
+            android:layout_marginTop="10dp"
+            android:hint="Masukkan password"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/poppinsregular"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black"
+            android:id="@+id/L_ed_nim" />
+
+        <TextView
+            android:id="@+id/txt_forgotpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="Lupa Password ?"
+            android:textColor="@color/SecondaryColor"
+            android:textSize="12dp"
+            android:onClick="onForgotClicked"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Masuk"
+        android:layout_below="@id/L_ly_1"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:id="@+id/L_btn_1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/L_btn_1"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum Punya Akun? "
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar"
+            android:fontFamily="@font/poppinssemibold"
+            android:textSize="12dp"
+            android:textColor="@color/SecondaryColor"
+            android:id="@+id/txt_register"
+            android:onClick="onRegisterClicked"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

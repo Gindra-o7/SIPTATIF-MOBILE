@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmEmailActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/gambar1"
+        android:id="@+id/ce_img_1"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow_back"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/L_btnback"
+        android:onClick="onLoginClicked2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_below="@+id/ce_img_1"
+        android:textSize="20dp"
+        android:fontFamily="@font/poppinsbold"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:id="@+id/ce_txt_1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ce_txt_1"
+        android:text="Masukkan Email Yang Sudah Terdaftar."
+        android:fontFamily="@font/poppinsregular"
+        android:textSize="12dp"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ce_txt_2"/>
+
+    <EditText
+        android:layout_below="@+id/ce_txt_2"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@drawable/button_shape"
+        android:hint="Masukkan email"
+        android:backgroundTint="@color/white"
+        android:paddingLeft="15dp"
+        android:fontFamily="@font/poppinsregular"
+        android:layout_margin="30dp"
+        android:id="@+id/ce_email"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Kirim"
+        android:layout_below="@+id/ce_email"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:id="@+id/ce_btn_1"/>
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gambar1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+
+    <ImageView
+        android:id="@+id/img_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gambar2"
+        android:layout_below="@id/img_1"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mari Mulai Dengan SIPTATIF"
+        android:layout_below="@id/img_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/txt_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the"
+        android:layout_below="@id/txt_1"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:gravity="center"
+        android:fontFamily="@font/poppinsregular"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Masuk"
+        android:layout_below="@id/txt_2"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:fontFamily="@font/poppinssemibold"/>
+
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Daftar"
+        android:layout_below="@id/btn_1"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:fontFamily="@font/poppinssemibold"/>
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.EditFragment">
+
+    <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:src="@drawable/ellipse" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/circle"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="DATA PENDAFTARAN"
+        android:textColor="@color/PrimaryColor"
+        android:textSize="26dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        tools:itemCount="3"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        tools:listitem="@layout/list_data"
+        android:id="@+id/recyclerView"/>
+
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:id="@+id/btn_form"
+        android:layout_below="@+id/recyclerView"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:text="Daftar"
+        android:fontFamily="@font/poppinssemibold"
+        android:onClick="onFormClicked"/>
+
+</RelativeLayout>

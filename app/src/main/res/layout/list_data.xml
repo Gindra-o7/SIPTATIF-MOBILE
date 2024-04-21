@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:background="@drawable/button_shape">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="04 September 2024"
+        android:fontFamily="@font/poppinssemibold"
+        android:textColor="@color/white"
+        android:id="@+id/tanggal"
+        android:textSize="20dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"
+        android:layout_below="@id/tanggal"
+        android:id="@+id/string_dosen"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/string_dosen">
+
+        <RelativeLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/skill"
+            android:id="@+id/ly"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Judul : "
+                android:textSize="14dp"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/white"
+                android:id="@+id/asal"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sistem SIPTATIF"
+                android:textSize="16dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/white"
+                android:id="@+id/judul"
+                android:layout_below="@+id/asal"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:text="Menunggu"
+            android:fontFamily="@font/poppinssemibold"
+            android:textSize="12dp"
+            android:id="@+id/wait"
+            android:gravity="center"/>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/gambar1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow_back"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/L_btnback"
+        android:onClick="onBackClicked"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="PENDAFTARAN JUDUL"
+        android:textColor="@color/PrimaryColor"
+        android:textSize="26dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/title"
+        android:padding="30dp"
+        android:id="@+id/ly_1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/jenis_pendaftaran">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                <AutoCompleteTextView
+                    android:id="@+id/auto_completePendaftaran"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Pilih jenis pendaftaran"
+                    android:inputType="none"
+                    android:fontFamily="@font/poppinsregular"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/button_shape"
+            android:hint="Masukkan nama lengkap"
+            android:backgroundTint="@color/white"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinsregular"
+            android:textColor="@color/black"
+            android:id="@+id/ed_fullname"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/button_shape"
+            android:layout_marginTop="10dp"
+            android:hint="Masukkan NIM"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/poppinsregular"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black"
+            android:id="@+id/ed_nim"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/button_shape"
+            android:layout_marginTop="10dp"
+            android:hint="Masukkan email"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/poppinsregular"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black"
+            android:id="@+id/ed_email"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/button_shape"
+            android:layout_marginTop="10dp"
+            android:hint="Judul Tugas Akhir"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/poppinsregular"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black"
+            android:id="@+id/ed_password"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/kategori">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                <AutoCompleteTextView
+                    android:id="@+id/auto_completeKategori"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Pilih kategori TA"
+                    android:inputType="none"
+                    android:fontFamily="@font/poppinsregular"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/calonPembimbing1">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                <AutoCompleteTextView
+                    android:id="@+id/auto_completecalonPembimbing1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Pilih calon dosen pembimbing"
+                    android:inputType="none"
+                    android:fontFamily="@font/poppinsregular"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/calonPembimbing2">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                <AutoCompleteTextView
+                    android:id="@+id/auto_completecalonPembimbing2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Pilih calon dosen pembimbing"
+                    android:inputType="none"
+                    android:fontFamily="@font/poppinsregular"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="vertical"
+            android:background="@drawable/outline"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_cloud_upload_24"
+                android:id="@+id/upload"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drag and drop to upload"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppinssemibold"
+                android:layout_below="@+id/upload"
+                android:layout_centerInParent="true"
+                android:id="@+id/dragAndDrop"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="or browse"
+                android:layout_gravity="center"
+                android:textSize="12dp"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_below="@+id/dragAndDrop"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ly_1"
+        android:layout_marginRight="30dp"
+        android:text="Kirim"
+        android:fontFamily="@font/poppinssemibold"
+        android:id="@+id/btn_send"
+        android:layout_alignParentEnd="true"/>
+
+
+</RelativeLayout>
