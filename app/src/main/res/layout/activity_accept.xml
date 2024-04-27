@@ -19,8 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/arrow_back"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
+        android:padding="16dp"
         android:id="@+id/L_btnback"
         android:onClick="onBackClicked"/>
 
@@ -62,252 +61,260 @@
         android:backgroundTint="#86e49d"
         android:textColor="#006b21"/>
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_below="@+id/diterima"
-        android:layout_margin="10dp">
+        android:id="@+id/ly_sv"
+        android:layout_below="@+id/diterima">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Nama"
-            android:layout_marginLeft="10dp"
-            android:fontFamily="@font/poppinsregular"
-            android:textColor="@color/black"
-            />
-
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Fulan Bin Fulan"
-            android:fontFamily="@font/poppinsregular"
-            android:textSize="16dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
-            android:background="@drawable/button_wait"
-            android:backgroundTint="@color/PrimaryColor"
-            android:textColor="@color/white"/>
+            android:orientation="vertical"
+            android:layout_margin="10dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="NIM"
-            android:layout_marginLeft="10dp"
-            android:fontFamily="@font/poppinsregular"
-            android:textColor="@color/black"
-            android:layout_marginTop="5dp"
-            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/black"
+                />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="12345678"
-            android:fontFamily="@font/poppinsregular"
-            android:textSize="16dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
-            android:background="@drawable/button_wait"
-            android:backgroundTint="@color/PrimaryColor"
-            android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fulan Bin Fulan"
+                android:fontFamily="@font/poppinsregular"
+                android:textSize="16dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/button_wait"
+                android:backgroundTint="@color/PrimaryColor"
+                android:textColor="@color/white"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Jenis Kelamin"
-            android:layout_marginLeft="10dp"
-            android:fontFamily="@font/poppinsregular"
-            android:textColor="@color/black"
-            android:layout_marginTop="5dp"
-            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NIM"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Laki-laki"
-            android:fontFamily="@font/poppinsregular"
-            android:textSize="16dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
-            android:background="@drawable/button_wait"
-            android:backgroundTint="@color/PrimaryColor"
-            android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12345678"
+                android:fontFamily="@font/poppinsregular"
+                android:textSize="16dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/button_wait"
+                android:backgroundTint="@color/PrimaryColor"
+                android:textColor="@color/white"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Judul TA"
-            android:layout_marginLeft="10dp"
-            android:fontFamily="@font/poppinsregular"
-            android:textColor="@color/black"
-            android:layout_marginTop="5dp"
-            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Sistem SIPTATIF"
-            android:fontFamily="@font/poppinsregular"
-            android:textSize="16dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
-            android:background="@drawable/button_wait"
-            android:backgroundTint="@color/PrimaryColor"
-            android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Laki-laki"
+                android:fontFamily="@font/poppinsregular"
+                android:textSize="16dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/button_wait"
+                android:backgroundTint="@color/PrimaryColor"
+                android:textColor="@color/white"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Kategori TA"
-            android:layout_marginLeft="10dp"
-            android:fontFamily="@font/poppinsregular"
-            android:textColor="@color/black"
-            android:layout_marginTop="5dp"
-            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Judul TA"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Laporan"
-            android:fontFamily="@font/poppinsregular"
-            android:textSize="16dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
-            android:background="@drawable/button_wait"
-            android:backgroundTint="@color/PrimaryColor"
-            android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sistem SIPTATIF"
+                android:fontFamily="@font/poppinsregular"
+                android:textSize="16dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/button_wait"
+                android:backgroundTint="@color/PrimaryColor"
+                android:textColor="@color/white"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Jenis TA"
-            android:layout_marginLeft="10dp"
-            android:fontFamily="@font/poppinsregular"
-            android:textColor="@color/black"
-            android:layout_marginTop="5dp"
-            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kategori TA"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Individu"
-            android:fontFamily="@font/poppinsregular"
-            android:textSize="16dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
-            android:background="@drawable/button_wait"
-            android:backgroundTint="@color/PrimaryColor"
-            android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Laporan"
+                android:fontFamily="@font/poppinsregular"
+                android:textSize="16dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/button_wait"
+                android:backgroundTint="@color/PrimaryColor"
+                android:textColor="@color/white"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Calon Pembimbing 1"
-            android:layout_marginLeft="10dp"
-            android:fontFamily="@font/poppinsregular"
-            android:textColor="@color/black"
-            android:layout_marginTop="5dp"
-            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jenis TA"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Dr. Fulanah, S.T., M.Kom."
-            android:fontFamily="@font/poppinsregular"
-            android:textSize="16dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
-            android:background="@drawable/button_wait"
-            android:backgroundTint="@color/PrimaryColor"
-            android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Individu"
+                android:fontFamily="@font/poppinsregular"
+                android:textSize="16dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/button_wait"
+                android:backgroundTint="@color/PrimaryColor"
+                android:textColor="@color/white"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Calon Pembimbing 2"
-            android:layout_marginLeft="10dp"
-            android:fontFamily="@font/poppinsregular"
-            android:textColor="@color/black"
-            android:layout_marginTop="5dp"
-            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calon Pembimbing 1"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Fulan, S.T., M.Kom."
-            android:fontFamily="@font/poppinsregular"
-            android:textSize="16dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
-            android:background="@drawable/button_wait"
-            android:backgroundTint="@color/PrimaryColor"
-            android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dr. Fulanah, S.T., M.Kom."
+                android:fontFamily="@font/poppinsregular"
+                android:textSize="16dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/button_wait"
+                android:backgroundTint="@color/PrimaryColor"
+                android:textColor="@color/white"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Calon Penguji 1"
-            android:layout_marginLeft="10dp"
-            android:fontFamily="@font/poppinsregular"
-            android:textColor="@color/black"
-            android:layout_marginTop="5dp"
-            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calon Pembimbing 2"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Fulan, S.T., M.Sc"
-            android:fontFamily="@font/poppinsregular"
-            android:textSize="16dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
-            android:background="@drawable/button_wait"
-            android:backgroundTint="@color/PrimaryColor"
-            android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fulan, S.T., M.Kom."
+                android:fontFamily="@font/poppinsregular"
+                android:textSize="16dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/button_wait"
+                android:backgroundTint="@color/PrimaryColor"
+                android:textColor="@color/white"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Calon Penguji 2"
-            android:layout_marginLeft="10dp"
-            android:fontFamily="@font/poppinsregular"
-            android:textColor="@color/black"
-            android:layout_marginTop="5dp"
-            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calon Penguji 1"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Fulan, S.T., M.T."
-            android:fontFamily="@font/poppinsregular"
-            android:textSize="16dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
-            android:background="@drawable/button_wait"
-            android:backgroundTint="@color/PrimaryColor"
-            android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fulan, S.T., M.Sc"
+                android:fontFamily="@font/poppinsregular"
+                android:textSize="16dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/button_wait"
+                android:backgroundTint="@color/PrimaryColor"
+                android:textColor="@color/white"/>
 
-    </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calon Penguji 2"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fulan, S.T., M.T."
+                android:fontFamily="@font/poppinsregular"
+                android:textSize="16dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/button_wait"
+                android:backgroundTint="@color/PrimaryColor"
+                android:textColor="@color/white"
+                android:layout_marginBottom="30dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </RelativeLayout>
